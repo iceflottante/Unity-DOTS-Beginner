@@ -5,9 +5,9 @@ using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 
-namespace MBSpaceShooter.Scripts
+namespace MBRotateMultipleCubes.Scripts
 {
-    public class MBSSGameManager : MonoBehaviour
+    public class MBRotateMultipleCubesGameManager : MonoBehaviour
     {
         public GameObject cube;
 
