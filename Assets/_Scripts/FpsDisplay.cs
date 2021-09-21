@@ -5,33 +5,32 @@ using UnityEngine;
 public class FpsDisplay : MonoBehaviour
 {
     private float deltaTime = 0.0f;
- 
-    void Update()
+
+    private void Update()
     {
         deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
     }
- 
-    void OnGUI()
+
+    private void OnGUI()
     {
         int w = Screen.width,
             h = Screen.height;
  
-        GUIStyle style = new GUIStyle();
- 
-        Rect rect = new Rect(0, 0, w, h * 2 / 100);
+        var rect = new Rect(0, 0, w, 20);
         
-        style.alignment = TextAnchor.UpperLeft;
+        var text = $"{deltaTime * 1000.0f:0.0} ms ({1.0f / deltaTime:0.} fps)";
         
-        style.fontSize = h * 2 / 100;
-        
-        style.normal.textColor = new Color (0.0f, 0.0f, 0.5f, 1.0f);
-        
-        float msec = deltaTime * 1000.0f;
-        
-        float fps = 1.0f / deltaTime;
-        
-        string text = string.Format("{0:0.0} ms ({1:0.} fps)", msec, fps);
-        
-        GUI.Label(rect, text, style);
+        GUI.Label(
+            rect,
+            text, 
+            new GUIStyle
+            {
+                alignment = TextAnchor.UpperLeft,
+                fontSize = 20,
+                normal =
+                {
+                    textColor = new Color(0.0f, 0.0f, 0.5f, 1.0f),
+                }
+            });
     }
 }

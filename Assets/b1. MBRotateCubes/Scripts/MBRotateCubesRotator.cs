@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace MBRotateMultipleCubes.Scripts
+namespace MBRotateCubes.Scripts
 {
-    public class MBRotateMultipleCubesRotator : MonoBehaviour
+    public class MBRotateCubesRotator : MonoBehaviour
     {
         public float speed;
 
