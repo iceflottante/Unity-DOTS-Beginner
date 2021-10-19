@@ -166,5 +166,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4949c2550bc742eea60fcf29685b93c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 8866895485079990651, guid: 95434a1126c904d73ae80228eb2fc460, type: 3}
+  Prefab: {fileID: 2099871925373037378, guid: 8b6381a06179f476790043b125aebc27, type: 3}
   Boundary: {x: 20, y: 10, z: 0}
