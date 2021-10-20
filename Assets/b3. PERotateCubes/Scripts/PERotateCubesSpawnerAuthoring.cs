@@ -23,7 +23,8 @@ namespace PERotateCubes.Scripts
                 new PERotateCubesSpawnerComponent {
                     Amount = 1000,
                     Prefab = conversionSystem.GetPrimaryEntity(Prefab),
-                    Boundary = Boundary
+                    Boundary = Boundary,
+                    Times = 1,
                 }
             );
         }
